@@ -1,9 +1,7 @@
 import React, { useEffect, useState } from "react";
-
 import axios from "axios";
-import Items from "./items";
+import Items from "./items.js";
 import { useForm } from "react-hook-form";
-
 import "./App.scss";
 
 function App() {
@@ -116,7 +114,7 @@ function App() {
           {
             <Items
               items={items}
-              type={userToken.type}
+              type={userToken?.type}
               removeHandler={(dataa) => handleRemove(dataa)}
             />
           }

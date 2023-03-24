@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./Global.scss";
-import Toast from "./Tosats";
+import Toast from "./Tosats.js";
 import axios from "axios";
 
 export default function Register() {

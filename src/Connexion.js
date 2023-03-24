@@ -1,8 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "./Global.scss";
 import axios from "axios";
-import Modal from "./Modal";
-import Toast from "./Tosats";
+import Toast from "./Tosats.js";
 
 const Connexion = ({ setToken }) => {
   const textRef = React.useRef();
@@ -117,10 +116,6 @@ const Connexion = ({ setToken }) => {
                 ></input>
               </div>
             </form>
-          </div>
-
-          <div className="row">
-            <Modal></Modal>
           </div>
         </div>
       </div>

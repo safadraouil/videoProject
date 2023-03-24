@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
 import "bootstrap/dist/css/bootstrap.css";
-import Contact from "./Contact";
-import MyList from "./MyList";
-import Register from "./Register";
+import Contact from "./Contact.js";
+import MyList from "./MyList.js";
+import Register from "./Register.js";
 import {
   BrowserRouter as Router,
   Routes,
@@ -10,8 +10,8 @@ import {
   Link,
   Navigate
 } from "react-router-dom";
-import App from "./App";
-import Connexion from "./Connexion";
+import App from "./App.js";
+import Connexion from "./Connexion.js";
 const Navbar = () => {
   var tokenString = localStorage.getItem("token");
   var userToken = JSON.parse(tokenString);

@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
-import Toast from "./Tosats";
+import Toast from "./Tosats.js";
 import "./Global.scss";
 
 export default function Contact() {
